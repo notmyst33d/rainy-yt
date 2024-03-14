@@ -1,0 +1,21 @@
+{
+  "description": "Puts Rainy on the YouTube logo",
+  "manifest_version": 2,
+  "name": "Rainy YouTube logo decoration",
+  "version": "1.0.0",
+  "permissions": [
+    "activeTab",
+    "*://*.youtube.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["rainy.js"]
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "rainy-yt@myst33d"
+    }
+  }
+}
